@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .clearfix::after {
     content: "";
     display: block;
@@ -92,6 +93,10 @@ button {
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
     h1 {
         display: none;
     }
