@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ostrowianka Zdrój</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        })
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Dowiedz się dlaczego warto pić wodę!</h1>
+        <nav class="clearfix">
+            <a href="#">
+                <img class="logo" src="img/logo.png" alt="logo strony - Ostorowianka">
+            </a>
+            <ul class="clearfix">
+                <li><a href="#one">O wodzie</a></li>
+                <li><a href="#two">Produkty</a></li>
+                <li><a href="#third">Pochodzenie</a></li>
+                <li><a href="#fourth">Kontakt</a></li>
+            </ul>
+        </nav>
+        <button>Kup teraz!</button>
+    </header>
+
+    <section id="oe" class="o-wodzie">
+        <a id="one" name="target"></a>
+        <h2>Woda źródlana to synonim czystej wody.</h2>
+        <p class="text">Woda - najbardziej potrzebna nam substancja po tlenie. Powiedzieć, że bez niej nie byłoby życia, jest oczywistym stwierdzeniem. Nie można jej niczym zastąpić, a nasz organizm niestety nie może jej magazynować, dlatego, aby prawidłowo funkcjonować, musimy pić, najlepiej naturalną, czerpaną z lodowców wodę.</p>
+        <p class="text">Wody butelkowane dzielimy wg stopnia mineralizacji, czyli ogólnej zawartości składników mineralnych, na wody:</p>
+        <ul class="filtr">
+            <li>bardzo niskozmineralizowane: &lt; 50 mg/l </li>
+            <li>nisko zmineralizowane: &gt; 50 – 500 mg/l</li>
+            <li>średnio zmineralizowane: > 500 – 1500 mg/l</li>
+            <li>wysoko zmineralizowane: > 1500 mg/l</li>
+        </ul>
+        <p class="text hide">Zarówno w naturze, jak i w sklepach najwięcej jest wód o składzie, który odpowiada potrzebom większości z nas. Dlatego też spośród ogółu wód butelkowanych największą grupę stanowią wody o niskiej i średniej mineralizacji, przy czym ok. 54% to wody źródlane, ok. 44% - wody mineralne, zaś wody stołowe to ok. 2% wszystkich dostępnych wód. Którą wybrać? Każda woda ma unikalny, charakterystyczny jedynie dla niej skład, a tym samym smak. Najlepiej wybierać taką, która z jednej strony odpowiada potrzebom naszego organizmu, a z drugiej trafia w nasze preferencje smakowe, po to aby jej picie było przyjemnością i byśmy sięgali najchętniej właśnie po wodę.</p>
+    </section>
+    <section id="to" class="o-wodzie">
+        <a id="two" name="target"></a>
+        <h2>Produkty</h2>
+        <div class="produ">
+            <img class="sell" src="img/butelka.png" alt="butelka wody">
+            <h3>Woda mineralna</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur illum, corporis autem deleniti dolorem unde inventore eos, perspiciatis non consectetur cupiditate veniam. Modi error asperiores soluta eos velit, doloremque, cum!</p>
+        </div>
+        <div class="produ">
+            <img class="sell" src="img/butelka.png" alt="butelka wody">
+            <h3>Woda gazowana</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae architecto, doloremque delectus natus rerum quasi. Rem perferendis ab, illo facere libero, iste maiores quidem dolor non nihil nisi a repellendus.</p>
+        </div>
+        <div class="produ">
+            <img class="sell" src="img/butelka.png" alt="butelka wody">
+            <h3>Woda średnio-gazowana</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad illo tempora placeat, quasi nobis. Velit ullam esse eveniet, magni qui nisi vero, ab dolorum repellendus ut ipsam aut doloremque quaerat?</p>
+        </div>
+        <div class="produ">
+            <img class="sell" src="img/butelka.png" alt="butelka wody">
+            <h3>Woda niegazowana</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illum consequuntur nobis corrupti, quaerat ipsum cum earum sit quas dolor. Ad illo quis similique, debitis obcaecati rerum ipsa quas expedita?</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

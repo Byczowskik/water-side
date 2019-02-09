@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #FAFAFA;
+}
+
+/*header*/
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url(img/bgmini.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+}
+
+nav {
+    display: none;
+}
+
+h1 {
+    width: 85%;
+    margin: 0 auto;
+    padding: 80px 0;
+    font-size: 35px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+button {
+    position: absolute;
+    padding: 15px 25px;
+    top: 60%;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid white;
+    color: white;
+    border-radius: 40px;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(104, 194, 229, 0.6);
+    cursor: pointer;
+    transition: .3s;
+
+
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    h1 {
+        font-size: 40px;
+        line-height: 110%;
+    }
+
+    button {
+        letter-spacing: 1px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    h1 {
+        font-size: 60px;
+        padding: 100px 0;
+
+    }
+
+    button {
+        width: 65%;
+        padding: 20px 30px;
+        letter-spacing: 2px;
+        font-size: 50px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    h1 {
+        display: none;
+    }
+
+    button {
+        width: 45%;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 80px;
+        z-index: 1;
+        /*        background-color: rgba(46, 49, 64, 0.7);*/
+        transition: .3s;
+    }
+
+    nav.black {
+        background-color: rgba(0, 0, 0, .9);
+        height: 80px;
+
+    }
+
+    .logo {
+        width: 20%;
+        float: left;
+        opacity: .8;
+        height: 80px;
+    }
+
+    ul.clearfix {
+        float: right;
+        width: 80%;
+        list-style: none;
+    }
+
+    ul.clearfix li {
+        float: left;
+        width: 25%;
+    }
+
+    ul.clearfix li a {
+        display: block;
+        font-size: 24px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 80px;
+        text-transform: uppercase;
+        color: white;
+        transition: .3s;
+    }
+
+    ul.clearfix li a:hover {
+        background-color: #00B9FF;
+    }
+
+    button:hover {
+        background-color: rgba(104, 194, 229, 0.8);
+    }
+
+    ul.clearfix li a:focus {
+        outline: none;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+    ul.clearfix li a {
+        font-size: 28px;
+    }
+}
+
+/*section*/
+.o-wodzie {
+    margin-top: 10px;
+    padding: 0 15px 5px 15px;
+    position: relative;
+}
+
+h2 {
+    padding: 10px;
+    color: #00285A;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text {
+    padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.filtr {
+    margin-left: 30px;
+}
+
+.filtr li {
+    padding: 10px;
+    list-style-type: disc;
+}
+
+.hide {
+    display: none;
+}
+
+.produ {
+    padding: 10px;
+    text-align: center;
+}
+
+.produ p {
+    line-height: 120%;
+    margin-top: 15px;
+}
+
+.produ h3 {
+    padding-top: 15px;
+}
+
+.sell {
+    width: 100%;
+    max-width: 300px;
+    /*    margin: 10px 12px;*/
+}
+
+#one,
+#two,
+#three,
+#fourth {
+    position: absolute;
+    top: -100px;
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    .text {
+        font-size: 19px;
+    }
+
+    .filtr li {
+        font-size: 18px;
+    }
+
+    .produ h3 {
+        font-size: 1.25em;
+
+    }
+
+    .produ p {
+        font-size: 18px;
+    }
+}
