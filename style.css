@@ -79,7 +79,7 @@ button {
 
 @media (orientation: portrait) and (min-width: 768px) {
     h1 {
-        font-size: 60px;
+        font-size: 58px;
         padding: 100px 0;
 
     }
@@ -103,6 +103,7 @@ button {
 
     button {
         width: 45%;
+        font-size: 29px;
     }
 
     nav {
@@ -113,7 +114,7 @@ button {
         width: 100%;
         height: 80px;
         z-index: 1;
-        /*        background-color: rgba(46, 49, 64, 0.7);*/
+        background-color: rgba(46, 49, 64, 0.6);
         transition: .3s;
     }
 
@@ -143,7 +144,7 @@ button {
 
     ul.clearfix li a {
         display: block;
-        font-size: 24px;
+        font-size: 23px;
         text-align: center;
         text-decoration: none;
         line-height: 80px;
@@ -249,5 +250,70 @@ h2 {
 
     .produ p {
         font-size: 18px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    .o-wodzie {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+
+    .filtr li {
+        font-size: 22px;
+    }
+
+    .produ h3 {
+        font-size: 1.65em;
+    }
+
+    .produ p {
+        font-size: 21px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .hide {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .o-wodzie {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .filtr li {
+        font-size: 17px;
+
+    }
+
+    .text {
+        font-size: 19px;
+        text-align: justify;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .produ {
+        float: left;
+        width: 50%;
+        padding-top: 20px;
+    }
+
+    .produ p {
+        width: 80%;
+        margin: 10px auto 0 auto;
+        text-align: center;
     }
 }
