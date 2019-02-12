@@ -58,7 +58,6 @@ button {
     color: white;
     border-radius: 40px;
     font-size: 30px;
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     text-align: center;
     background-color: rgba(104, 194, 229, 0.6);
@@ -221,10 +220,13 @@ h2 {
     padding: 10px;
     font-size: 17px;
     text-align: justify;
+    line-height: 120%;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .filtr {
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .filtr li {
@@ -240,6 +242,7 @@ h2 {
     padding: 10px;
     text-align: center;
 }
+
 
 .produ p {
     line-height: 120%;
@@ -329,6 +332,10 @@ h2 {
         margin: 0 auto;
     }
 
+    .filtr {
+        margin-left: 70px;
+    }
+
     .filtr li {
         font-size: 17px;
 
@@ -368,6 +375,59 @@ h2 {
 .m-img {
     width: 100%;
     height: 100%;
+}
+
+.pch {
+    padding: 15px 0;
+    color: #001434;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+thead {
+
+    font-size: 17px;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: #95dbea;
+}
+
+
+
+th {
+    padding: 3px;
+}
+
+th:nth-of-type(1) {
+    text-align: left;
+}
+
+th:nth-of-type(2) {
+    text-align: right;
+}
+
+td {
+    text-align: right;
+    padding: 8px 16px;
+
+
+}
+
+td:first-child {
+    text-align: left;
+}
+
+caption {
+    padding: 10px;
+    color: cadetblue;
+    caption-side: bottom;
+    text-align: left;
 }
 
 @media (orientation: portrait) and (min-width: 768px) {
@@ -473,4 +533,23 @@ h2 {
         margin-left: -80%;
     }
 
+    /*    tekst-pochodzeni*/
+
+    .pch {
+        width: 80%;
+        font-size: 22px;
+        margin: 10px auto 0 auto;
+        text-align: center;
+    }
+
+    .ftxt {
+        margin: 0 auto;
+    }
+
+    .ntxt {
+        float: left;
+        width: 50%;
+        padding: 20px;
+        text-align: left;
+    }
 }
