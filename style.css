@@ -48,6 +48,7 @@ h1 {
 button {
     position: absolute;
     padding: 15px 25px;
+    z-index: 1;
     top: 60%;
     left: 0;
     right: 0;
@@ -114,7 +115,7 @@ button {
         display: block;
         width: 100%;
         height: 80px;
-        z-index: 1;
+        z-index: 100;
         background-color: rgba(46, 49, 64, 0.6);
         transition: .3s;
     }
@@ -128,7 +129,6 @@ button {
     .logo {
         width: 20%;
         float: left;
-        opacity: .8;
         height: 80px;
     }
 
@@ -143,7 +143,8 @@ button {
         width: 25%;
     }
 
-    ul.clearfix li a {
+    .btn {
+        position: relative;
         display: block;
         font-size: 23px;
         text-align: center;
@@ -151,25 +152,53 @@ button {
         line-height: 80px;
         text-transform: uppercase;
         color: white;
-        transition: .3s;
     }
 
-    ul.clearfix li a:hover {
+    .btn::before {
+        width: 0;
+        height: 100%;
         background-color: #00B9FF;
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .4s;
     }
 
-    button:hover {
+
+    .btn:hover::before {
+        width: 100%;
+    }
+
+    button::before {
+        width: 100%;
+        height: 0;
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .4s;
+        border-radius: 40px;
+    }
+
+    button:hover::before {
+        height: 100%;
         background-color: rgba(104, 194, 229, 0.8);
+
     }
 
-    ul.clearfix li a:focus {
+    .btn:focus {
         outline: none;
     }
 
 }
 
 @media (orientation: landscape) and (min-width: 1400px) {
-    ul.clearfix li a {
+    .btn {
         font-size: 28px;
     }
 }
