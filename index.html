@@ -35,7 +35,7 @@
                 <li><a href="#fourth" class="btn">Kontakt</a></li>
             </ul>
         </nav>
-        <button>Kup teraz!</button>
+        <button class="main-bt">Kup teraz!</button>
     </header>
 
     <section class="o-wodzie">
@@ -157,14 +157,43 @@
                         </tr>
                     </tbody>
                     <caption>Suma składników mineralnych wynosi 299 mg/dm3</caption>
-
                 </table>
 
             </div>
 
         </div>
     </section>
-    <footer></footer>
+    <section class="contact">
+        <a id="fourth" name="target"></a>
+        <h2 class="c1">Kontakt</h2>
+        <form method="post" novalidate action="">
+            <div class="form-row">
+                <label for="f-name">Imię*</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-row">
+                <label for="f-email">E-mail*</label>
+                <input type="text" name="email">
+            </div>
+            <div class="form-row">
+                <label for="f-text">Wiadomość*</label>
+                <textarea name="text" id="f-text" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-row">
+                <label class="checkbox-cnt">
+                    <input type="checkbox" name="regulation">
+                    <span>Wyrażam zgodę na wysłanie formularza.</span>
+                </label>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="sbt" disabled>Wyślij</button>
+            </div>
+        </form>
+    </section>
+    <footer class="clearix">
+        <div class="map"></div>
+        <p class="ft">&copy; Krystian Byczkowski</p>
+    </footer>
 </body>
 
 </html>

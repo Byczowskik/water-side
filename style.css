@@ -45,7 +45,7 @@ h1 {
     text-transform: uppercase;
 }
 
-button {
+.main-bt {
     position: absolute;
     padding: 15px 25px;
     z-index: 1;
@@ -63,8 +63,14 @@ button {
     background-color: rgba(104, 194, 229, 0.6);
     cursor: pointer;
     transition: .3s;
+}
 
+.main-bt:focus {
+    outline: none;
+}
 
+.main-bt:active {
+    border-radius: 40px;
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
@@ -73,7 +79,7 @@ button {
         line-height: 110%;
     }
 
-    button {
+    .main-bt {
         letter-spacing: 1px;
     }
 }
@@ -85,7 +91,7 @@ button {
 
     }
 
-    button {
+    .main-bt {
         width: 65%;
         padding: 20px 30px;
         letter-spacing: 2px;
@@ -102,7 +108,7 @@ button {
         display: none;
     }
 
-    button {
+    .main-bt {
         width: 45%;
         font-size: 29px;
     }
@@ -171,7 +177,7 @@ button {
         width: 100%;
     }
 
-    button::before {
+    .main-bt::before {
         width: 100%;
         height: 0;
         content: "";
@@ -184,7 +190,7 @@ button {
         border-radius: 40px;
     }
 
-    button:hover::before {
+    .main-bt:hover::before {
         height: 100%;
         background-color: rgba(104, 194, 229, 0.8);
 
@@ -260,13 +266,17 @@ h2 {
 }
 
 #one,
-#two,
-#fourth {
+#two {
     position: absolute;
     top: -100px;
 }
 
 #third {
+    position: absolute;
+    top: -100px;
+}
+
+#fourth {
     position: absolute;
     top: -100px;
 }
@@ -553,3 +563,98 @@ caption {
         text-align: left;
     }
 }
+
+/*sekcja-contact*/
+.c1 {
+    color: white;
+    padding: 20px 0 15px 0;
+}
+
+.contact {
+    position: relative;
+    background-color: #303030;
+    color: white;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-row:last-child {
+    margin-bottom: 0;
+}
+
+
+form input[type=text],
+form input[type=email],
+form textarea {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    display: block;
+    width: 100%;
+    color: #666;
+}
+
+form input[type=text]:focus,
+form input[type=email]:focus,
+form textarea:focus,
+form .sbt:focus {
+    outline: none;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+
+form .sbt {
+    width: 100%;
+    padding: 10px 2px;
+    background: #70B81B;
+    border: none;
+
+    border-radius: 0.2rem;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+form .checkbox-cnt {
+    padding: 5px 0 2px 3px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #EEE;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 130%;
+}
+
+form .checkbox-cnt input {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+form .sbt:hover {
+    background-color: #7EC927;
+}
+
+/*footer*/
+footer {
+    /*    background-color: #303030;*/
+}
+
+.map {}
