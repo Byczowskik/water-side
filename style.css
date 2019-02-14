@@ -654,7 +654,43 @@ form .sbt:hover {
 
 /*footer*/
 footer {
-    /*    background-color: #303030;*/
+    background-color: black;
+    width: 100%;
 }
 
-.map {}
+.ft-contact {
+    float: left;
+    width: 90%;
+    padding: 10px;
+    text-align: justify;
+}
+
+.ft {
+    color: white;
+
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.socials {
+    float: right;
+    width: 10%;
+    text-align: left;
+    padding: 10px;
+}
+
+.fab {
+    color: white;
+    font-size: 23px;
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .ft-contact {
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .socials {
+        text-align: left;
+    }
+}
